@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="lwjgl-glfw">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/lwjgl-glfw" />
+      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/lwjgl-glfw" />
+      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-glfw" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-glfw" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" type="SOURCES" />
+  </library>
+</component>
