@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="lwjgl-opengl">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+      <root url="file://$PROJECT_DIR$/temp/lwjgl-opengl" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/lwjgl-opengl" />
+      <root url="file://$PROJECT_DIR$/temp/lwjgl-opengl" />
     </SOURCES>
-    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-opengl" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/temp/lwjgl-opengl" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/temp/lwjgl-opengl" recursive="false" type="SOURCES" />
   </library>
 </component>
