@@ -1,3 +1,5 @@
+import Entity.Player;
+import Texture.Texture;
 import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
@@ -11,14 +13,27 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
+
+
 public class Game {
     // The window handle
     private long window;
 
+    private Player player;
+
+    public Game() {
+        player = new Player();
+    }
+
+
+    Texture texture;
     public void run() {
         System.out.println("Hello LWJGL " + Version.getVersion() + "!");
 
         init();
+
+        texture = new Texture();
+
         loop();
 
         // Free the window callbacks and destroy the window
@@ -81,29 +96,32 @@ public class Game {
 
         // Make the window visible
         glfwShowWindow(window);
-    }
 
-    private void loop() {
         // This line is critical for LWJGL's interoperation with GLFW's
         // OpenGL context, or any context that is managed externally.
         // LWJGL detects the context that is current in the current thread,
         // creates the GLCapabilities instance and makes the OpenGL
         // bindings available for use.
-        GL.createCapabilities();
 
+        GL.createCapabilities();
+    }
+
+    private void loop() {
         // Set the clear color
-        glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
         while ( !glfwWindowShouldClose(window) ) {
+            glfwPollEvents();
+
+            glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
 
-            glfwSwapBuffers(window); // swap the color buffers
+            texture.update();
 
+            glfwSwapBuffers(window); // swap the color buffers
             // Poll for window events. The key callback above will only be
             // invoked during this call.
-            glfwPollEvents();
         }
     }
 }
